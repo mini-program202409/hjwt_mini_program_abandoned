@@ -1,12 +1,33 @@
 {
 	"pages": [
 		"pages/index/index",
-    "pages/list/list",
-    "singleTemplate/pages/index/index"
+		"pages/list/list",
+		"singleTemplate/pages/index/index",
+		"pages/me/me"
 	],
 	"window": {
 		"navigationBarTextStyle": "white"
-	},
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_selected.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black"
+  },
 	"useExtendedLib": {
 		"weui": true
 	},
