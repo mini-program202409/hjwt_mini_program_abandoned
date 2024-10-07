@@ -1,0 +1,19 @@
+<view class="container">
+  <!-- 标题 -->
+  <view class="title">赛事文件下载</view>
+
+  <!-- 文件列表 -->
+  <block wx:for="{{files}}" wx:key="name">
+    <view class="file-item" bindtap="onDownload" data-url="{{item.url}}">
+      <view class="file-info">
+        <text class="file-name">{{item.name}}</text>
+        <text class="file-date">{{item.uploadDate}}</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 没有文件时的提示 -->
+  <view wx:if="{{files.length === 0}}" class="empty-message">
+    暂无文件可下载
+  </view>
+</view>

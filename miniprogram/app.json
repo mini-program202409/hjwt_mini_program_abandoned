@@ -1,9 +1,13 @@
 {
 	"pages": [
-		"pages/index/index",
-		"pages/list/list",
-		"singleTemplate/pages/index/index",
-		"pages/me/me"
+		"pages/home/home",
+		"pages/competition/competition",
+		"pages/competition_document/competition_document",
+		"pages/group/group",
+		"pages/role/role",
+		"pages/successful_registration/successful_registration",
+		"pages/me/me",
+		"pages/info_modification/info_modification"
 	],
 	"window": {
 		"navigationBarTextStyle": "white"
@@ -11,7 +15,13 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/competition/competition",
+        "text": "赛事",
+        "iconPath": "images/competition.png",
+        "selectedIconPath": "images/competition_selected.png"
+      },
+      {
+        "pagePath": "pages/home/home",
         "text": "主页",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home_selected.png"

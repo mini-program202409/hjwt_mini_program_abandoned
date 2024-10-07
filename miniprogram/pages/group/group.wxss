@@ -1,0 +1,60 @@
+/* 页面整体布局 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+}
+
+/* 标题容器 */
+.title-wrapper {
+  margin-bottom: 20px;
+}
+
+/* 标题样式 */
+.title {
+  font-family: "Hiragino Sans GB", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3a8dff, #005bac);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+  letter-spacing: 2px;
+}
+
+/* 分组项目样式 */
+.group-item {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 分组悬停时效果 */
+.group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 标题的淡入动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

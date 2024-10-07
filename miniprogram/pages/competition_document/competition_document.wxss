@@ -1,0 +1,99 @@
+/* 页面整体布局 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+}
+
+/* 标题容器 */
+.title-wrapper {
+  margin-bottom: 20px;
+}
+
+/* 美化后的标题样式 */
+.title {
+  font-family: "Hiragino Sans GB", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3a8dff, #005bac); /* 标题的渐变色 */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;  /* 兼容性处理 */
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+  letter-spacing: 2px;  /* 字母间距 */
+}
+
+/* 文件项样式 */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out forwards;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.file-item:hover {
+  transform: translateY(-5px);  /* 悬浮时的动画效果 */
+}
+
+/* 文件信息样式 */
+.file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 文件名样式 */
+.file-name {
+  font-size: 18px;
+  color: #005bac;
+  font-weight: bold;
+}
+
+/* 文件上传日期样式 */
+.file-date {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* 空提示信息样式 */
+.empty-message {
+  font-size: 16px;
+  color: #666;
+  margin-top: 40px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <!-- LOGO 部分 -->
+  <view class="logo-wrapper">
+    <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+    <view class="circle-background"></view>  <!-- 背景圆形装饰 -->
+  </view>
+
+  <!-- 动态分割线 -->
+  <view class="divider-wrapper">
+    <view class="divider"></view>  <!-- 动态延展的分割线 -->
+  </view>
+
+  <!-- 泓杰文体 -->
+  <text class="title">泓杰文体</text>
+</view>

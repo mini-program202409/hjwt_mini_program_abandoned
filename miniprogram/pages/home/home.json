@@ -1,0 +1,15 @@
+{
+	"usingComponents": {
+		"mp-icon": "weui-miniprogram/icon/icon",
+		"mp-half-screen-dialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog",
+		"mp-cells": "weui-miniprogram/cells/cells",
+    	"mp-cell": "weui-miniprogram/cell/cell"
+	},
+  "navigationBarBackgroundColor": "#f0f8ff",   
+  "navigationBarTextStyle": "black",           
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",               
+  "backgroundColor": "#ffffff",                
+  "backgroundColorTop": "#f0f8ff",             
+  "backgroundColorBottom": "#ffffff"
+}

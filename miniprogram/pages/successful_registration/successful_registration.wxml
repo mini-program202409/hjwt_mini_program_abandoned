@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="title-wrapper">
+    <text class="title">报名成功</text>
+  </view>
+
+  <!-- 展示报名的赛事、分组、角色信息 -->
+  <view class="info-container">
+    <view class="info-group">
+      <text class="label">比赛：</text>
+      <text class="info">{{competitionName}}</text>
+    </view>
+
+    <view class="info-group">
+      <text class="label">分组：</text>
+      <text class="info">{{groupName}}</text>
+    </view>
+
+    <view class="info-group">
+      <text class="label">角色：</text>
+      <text class="info">{{role}}</text>
+    </view>
+  </view>
+
+  <button class="back-btn" bindtap="onBackToMe">查看已报名赛事</button>
+</view>

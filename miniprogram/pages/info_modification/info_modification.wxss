@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #f0f8ff;
   min-height: 100vh;
-  justify-content: space-between; /* 内容与按钮分开布局 */
+  justify-content: space-between;
 }
 
 /* 内容区域 */
@@ -13,7 +13,7 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  flex-grow: 1; /* 让内容区域填满剩余空间 */
+  flex-grow: 1;
 }
 
 /* 标题样式 */
@@ -71,5 +71,5 @@
   text-align: center;
   border-radius: 8px;
   margin: 20px 0;
-  align-self: center; /* 按钮居中 */
+  align-self: center;
 }

@@ -170,7 +170,7 @@ Page({
   },
   onShareAppMessage () {
     return {
-      title: '活动报名｜' + that.data.project.title,
+      title: that.data.project.title,
       path: `pages/index/index?id=${that.id||'INIT'}`,
       imageUrl: that.data.project.topimg
     }

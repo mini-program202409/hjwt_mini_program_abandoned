@@ -1,0 +1,14 @@
+<view class="container">
+  <!-- 美化后的标题 -->
+  <view class="title-wrapper">
+    <text class="title">赛事报名</text>
+  </view>
+
+  <!-- 赛事列表 -->
+  <view wx:for="{{competitions}}" wx:key="id" class="competition-item" data-id="{{item.id}}" bindtap="onSelectCompetition">
+    <text>{{item.name}}</text>
+  </view>
+
+  <!-- 下载文件按钮 -->
+  <button class="download-btn" bindtap="onDownload">赛事文件</button>
+</view>

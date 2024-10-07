@@ -1,0 +1,11 @@
+<view class="container">
+  <!-- 美化后的标题 -->
+  <view class="title-wrapper">
+    <text class="title">选择角色</text>
+  </view>
+
+  <!-- 角色列表 -->
+  <view wx:for="{{roles}}" wx:key="id" class="role-item" data-id="{{item.id}}" bindtap="onSelectRole">
+    <text>{{item.name}}</text>
+  </view>
+</view>

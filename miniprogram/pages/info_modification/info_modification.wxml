@@ -1,0 +1,53 @@
+<view class="container">
+  <!-- 内容区域 -->
+  <view class="content">
+    <text class="title">修改个人信息</text>
+
+    <!-- 信息组 -->
+    <view class="info-group">
+      <text class="label">姓名：</text>
+      <input class="info" value="{{name}}" bindinput="onInputChange" data-field="name" />
+    </view>
+
+    <view class="info-group">
+      <text class="label">身份证号：</text>
+      <input class="info" value="{{idNumber}}" bindinput="onInputChange" data-field="idNumber" />
+    </view>
+
+    <view class="info-group">
+      <text class="label">性别：</text>
+      <radio-group class="radio-group" bindchange="onGenderChange">
+        <label class="radio-label">
+          <radio value="男" checked="{{gender === '男'}}" /> 男
+        </label>
+        <label class="radio-label">
+          <radio value="女" checked="{{gender === '女'}}" /> 女
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="info-group">
+      <text class="label">年龄：</text>
+      <input class="info" type="number" value="{{age}}" bindinput="onInputChange" data-field="age" />
+    </view>
+
+    <view class="info-group">
+      <text class="label">学校/单位：</text>
+      <input class="info" value="{{organization}}" bindinput="onInputChange" data-field="organization" />
+    </view>
+
+    <view class="info-group">
+      <text class="label">手机：</text>
+      <input class="info" type="number" value="{{phone}}" bindinput="onInputChange" data-field="phone" />
+    </view>
+
+    <view class="info-group">
+      <text class="label">证件照：</text>
+      <image class="photo-preview" src="{{photo}}" mode="aspectFit" wx:if="{{photo}}" />
+      <button class="upload-btn" bindtap="onUploadPhoto">上传证件照</button>
+    </view>
+  </view>
+
+  <!-- 修改按钮 -->
+  <button class="edit-btn" bindtap="onSave">保存</button>
+</view>
